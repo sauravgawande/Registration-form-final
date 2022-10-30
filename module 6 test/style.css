@@ -1,0 +1,35 @@
+
+#form1{
+    width: 900px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0px;
+    box-shadow: 0px 10px 10px solid grey ;
+    
+}
+#h11{
+    background-color: black;
+    color: white;
+    height: 100px;
+    justify-content: center;
+    width: 900px;
+    margin: 10px;
+}
+.col-md-4{
+    width: 400px;
+}
+.row-cols-md-4{
+    width: 400px;
+    
+}
+#ctry{
+   text-align: center;
+}
+#bbb{
+    display: flex;
+    justify-content: center;
+    
+}

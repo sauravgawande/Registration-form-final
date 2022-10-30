@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistration Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+       
+        <form id="form1" class="row g-3 registration-form" >
+            <div class="d-flex justify-content-center"><h1 id="h11" style="text-align: center;" class="display-4"><strong>Registration Form</strong></h1></div>
+            
+            <div class="row-cols-md-4">
+              <label for="validationCustom01" class="form-label"><strong>First name</strong></label>
+              <input type="text" class="form-control" id="validationCustom01" oninput="valid()" required>
+              <div id="v1" class="valid-feedback">
+                Looks good!
+              </div>
+              <div id="inv1" class="invalid-feedback">
+                Please enter a vaild first name
+              </div>
+            </div>
+
+
+            <div class="row-cols-md-4">
+              <label for="validationCustom02" class="form-label"><strong>Last name</strong></label>
+              <input type="text" class="form-control" id="validationCustom02" oninput="valid()" required>
+              <div id="v2" class="valid-feedback">
+                Looks good!
+              </div>
+              <div id="inv2" class="invalid-feedback">
+                Please enter a vaild last name
+              </div>
+            </div>
+
+
+            <div class="row-cols-md-4">
+              <label for="validationCustomUsername" class="form-label"><strong>Email-Id</strong></label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" oninput="valid()" required>
+                <div id="v3" class="valid-feedback">
+                    Looks good!
+                </div>
+                <div id="inv3" class="invalid-feedback">
+                  Please enter Email-Id.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row-cols-md-4">
+              <label for="validationCustom03" class="form-label"><strong>Mobile</strong></label>
+              <input type="number" class="form-control" id="validationCustom03" oninput="valid()" required>
+              <div  id="v4" class="valid-feedback">
+                Looks good!
+              </div>
+              <div  id="inv4" class="invalid-feedback">
+                Please enter a valid mobile number
+              </div>
+            </div>
+
+            <div  id="bbb">
+
+                <div id='gender11'>
+                    <strong>Gender</strong>
+                </div>
+             
+                    <div class="form-check" >
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" oninput="valid()" required>
+                        <label class="form-check-label" for="exampleRadios1">
+                         Male
+                        </label>
+                    </div>
+                    <div class="form-check" >
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" oninput="valid()" required>
+                        <label class="form-check-label" for="exampleRadios2">
+                         Female
+                        </label>
+                    </div>
+                    <div class="form-check" >
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" oninput="valid()" required>
+                        <label class="form-check-label" for="exampleRadios3">
+                          Others
+                        </label>
+                    </div>
+               
+                    <div  id="v5" class="valid-feedback">
+                      Looks good!
+                    </div>
+                     <div  id="inv5" class="invalid-feedback">
+                      Please select a valid gender
+                    </div>
+            </div>
+    
+    
+            <div class="row-cols-md-4" id="ctry" >
+              <label for="validationCustom05" class="form-label" id="country"><strong>Country</strong></label>
+              <select class="form-select" id="validationCustom05" onchange="valid()"  required>
+                <option selected disabled value="">Choose...</option>
+                <option id="option1">India</option>
+                <option id="option2">USA</option>
+              </select>
+              <div id="v6" class="valid-feedback">
+                Looks good!
+            </div>
+              <div id="inv6" class="invalid-feedback">
+                Please select a valid country
+              </div>
+            </div>
+            <div class="col-12" style="text-align: center;">
+                <button id="btn1" class="btn btn-dark" type="submit" onclick="valid()" >Submit form</button>
+              </div>
+            
+            
+          </form>
+         
+   <script src="/index2.js"></script>
+</body>
+</html>
